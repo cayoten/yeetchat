@@ -1,0 +1,13 @@
+name: YEETTheChat
+version: ${project.version}
+main: me.raimuakuna.yeetthechat.Yeetthechat
+api-version: 1.15
+authors: [raimuakuna]
+description: A simple chat clearing plugin
+commands:
+  yeetchat:
+    description: Clear the chat
+    usage: /yeetchat
+  ycreload:
+    description: Reload the plugin
+    usage: /ycreload

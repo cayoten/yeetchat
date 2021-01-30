@@ -1,0 +1,6 @@
+# WELCOME TO THE YEETCHAT CONFIG
+
+# The plugin's prefix
+pluginprefix: '&8[&6YC&8] '
+# The global broadcast prefix
+broadcastprefix: '&8[&6Server&8] '
