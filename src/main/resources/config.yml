@@ -1,6 +1,18 @@
 # WELCOME TO THE YEETCHAT CONFIG
 
+# Small guide:
+# %p = The player
+
+# Plugin messages (and the ability to alter them) below
+
 # The plugin's prefix
-pluginprefix: '&8[&6YC&8] '
+plugin-prefix: '&8[&6YC&8] '
+
 # The global broadcast prefix
-broadcastprefix: '&8[&6Server&8] '
+broadcast-prefix: '&8[&6Server&8] '
+
+# What you want the successful cleared chat message to be.
+successful-clear: '&aWith the power of the gods, the chat has been cleared by &c%p&a.'
+
+# No permissions response
+no-permission-error: "&cNO PERMISSIONS?? &o*insert megamind face here*"

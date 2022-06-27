@@ -12,16 +12,17 @@ public class Reload implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        String pluginprefix = plugin.getConfig().getString("pluginprefix");
+        String pluginPrefix = plugin.getConfig().getString("plugin-prefix");
+        String noPerms = plugin.getConfig().getString("no-permission-error");
 
         if (!sender.hasPermission("Yeetchat.reload")) {
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&',pluginprefix + "&cYou do not have the required permission to run this command! (yeetchat.reload)"));
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&',pluginPrefix + noPerms));
             return true;
         }
 
         plugin.saveDefaultConfig();
         plugin.reloadConfig();
-        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', pluginprefix + "&aUgh, fine. It's done."));
+        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', pluginPrefix + "&aUgh, fine. It's done. &cPlugin reloaded!"));
         return true;
     }
 }
